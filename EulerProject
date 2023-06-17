@@ -1,0 +1,57 @@
+import numpy as np
+import matplotlib as mpl
+import pandas as pd
+#Question 1
+# numberlist=list(range(1,1000))
+# sumlist=[]
+# n=0
+# while n<len(numberlist):
+#     if numberlist[n]%3==0 or numberlist[n]%5==0:
+#         sumlist.append(numberlist[n])
+#     n+=1
+# print(np.sum(sumlist))
+
+#Question 2
+# By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+# fibonacci=[1,2]
+# n=0
+# u=1
+# final=4*10**6
+# evenfib=[]
+# while fibonacci[-2]+fibonacci[-1]<final:
+#     nextterm=fibonacci[n]+fibonacci[u]
+#     fibonacci.append(nextterm)
+#     n+=1
+#     u+=1
+# for i in fibonacci:
+#     if i%2==0:
+#         evenfib.append(i)
+# print(np.sum(evenfib))
+
+
+#Question 3
+#do all the operation on each possible factor starting at largest one and working down to see if one is prime, once prime it found quit loop
+
+# largenum=600851475143
+# biggestfactor=int(largenum//2)
+# possiblefacts=list(range(1,biggestfactor,2))
+
+# for i in possiblefacts:
+#     if largenum%possiblefacts[-i]==0 and possiblefacts[-i]%5!=0:
+#         maxfactor=int(np.sqrt(possiblefacts[-i]))
+#         smalllist=list(range(1,maxfactor,2))
+#         for i in smalllist:
+#             if maxfactor%smalllist[-i]==0:    #need to print possiblefacts[-i]
+#                 break
+#             elif i==len(smalllist) and maxfactor%smalllist[-i]!=0:
+#                 print(maxfactor)
+#                 break
+#     elif i==len(smalllist) and maxfactor%smalllist[-i]!=0:
+#         break
+
+
+
+
+
+
+
